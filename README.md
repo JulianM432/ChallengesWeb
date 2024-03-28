@@ -3,6 +3,4 @@
 <h2>
     Retos y otras actividades para aprender Web
 </h2>
-<p>
-    Challenge HTML -> https://lenguajehtml.com/challenge/
-</p>
+<p><a href="https://lenguajehtml.com/challenge/" target="_blank">Challenge HTML</a></p>
