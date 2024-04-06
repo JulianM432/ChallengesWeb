@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto";
+    text-align: center;
+    background-color: #223;
+    color: azure;
+    padding: 10px;
+    /* margin: 0 auto; */
+}
+
+div {
+    width: 80%;
+    margin: 50px auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: azure;
+}
+
+a :hover {
+    text-decoration: underline;
+}
+
+.red {
+    background: orangered;
+    color: azure;
+}
+
+.blue {
+    background: darkcyan;
+    color: azure;
+}
+
+details {
+    margin: 20px auto;
+}
+
+details summary::marker {
+    content: "⮞ ";
+}
+
+details[open] summary::marker {
+    content: "⮟ ";
+}
+
+.container {
+    text-align: justify;
+    background: linear-gradient(90deg, #8441a4, #ff5894);
+}
+
+.container-img {
+    background-image: linear-gradient(90deg, #6454f0, #6ee2f5);
+    width: 800px;
+}
+
+.container-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.container-list {
+    background: linear-gradient(90deg, #561139, #38a2d7);
+    align-content: center;
+}
+
+ol {
+    list-style-position: inside;
+    width: 75%;
+    text-align: justify;
+    margin: auto;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+span {
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: underline;
+}

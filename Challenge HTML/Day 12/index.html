@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10 Challenge HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Day 12 HTML Challenge</h1>
+    <h2>Challenge: Crear un slider de 1 a 50</h2>
+    <div class="container input">
+        <label for="">
+            <input id="sliderInput" class="custom" type="range" min="1" max="50" value="5"
+                oninput="this.nextElementSibling.value = this.value">
+            <output id="sliderOutput">5</output>
+        </label>
+    </div>
+</body>
+<!-- <script>
+    const sliderInput = document.querySelector('#sliderInput');
+    const sliderOutput = document.querySelector('#sliderOutput');
+    sliderInput.addEventListener('input',()=> {
+        sliderOutput.textContent = sliderInput.value;
+    })
+</script> -->
+
+</html>
