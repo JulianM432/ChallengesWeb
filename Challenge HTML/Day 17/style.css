@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'Minecraft';
+    font-style: normal;
+    font-weight: normal;
+    src: local(1_MinecraftRegular1), url(1_MinecraftRegular1.woff) format(woff);
+}
+
+@font-face {
+    font-family: 'Minecraft Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Minecraft Italic'), url('2_MinecraftItalic1.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Minecraft Bold';
+    src: local(3_MinecraftBold1), url(3_MinecraftBold1.woff) format(woff);
+}
+
+@font-face {
+    font-family: "Minecraft Bold Italic";
+    src: local(4_MinecraftBoldItalic1), url(4_MinecraftBoldItalic1.woff) format(woff);
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto";
+    text-align: center;
+    background-color: #0c0c0c;
+    color: azure;
+    padding: 10px;
+    /* margin: 0 auto; */
+}
+
+div {
+    width: 80%;
+    margin: 50px auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.challenge {
+    text-align: center;
+    /* background: linear-gradient(90deg, #33001b, #ff0084); */
+    background: linear-gradient(90deg, #8e2de2, #4a00e0);
+}
+
+.container {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    align-content: center;
+    text-align: justify;
+    background: linear-gradient(90deg, #04BDE4, #0253B9);
+    /* background: linear-gradient(90deg, #870000, #ff9100); */
+    /* background: linear-gradient(180deg,#00ff7f,#073d3a); */
+    /* background: linear-gradient(90deg, #141e30, #243b55); */
+    /* background: linear-gradient(270deg, #ffeb70, #f02262); */
+}
+
+.challenge p {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.container p, .container meter {
+    margin: 0 5px;
+}
+
+.container meter {
+    height: 25px;
+}
+
+.container-img {
+    background-image: linear-gradient(90deg, #6454f0, #6ee2f5);
+    width: 800px;
+}
+
+.container-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.container-list {
+    background: linear-gradient(90deg, #561139, #38a2d7);
+    align-content: center;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* align-content: center; */
+}
+
+/* CLASS CARD */
+
+.card {
+    /* width: 600px; */
+    display: flex;
+    font-family: "Minecraft", monospace;
+    font-size: 20px;
+    text-align: justify;
+    background: #4b0082;
+    color: #2fd0ea;
+}
+
+.card ul {
+    list-style: none;
+}
+
+.card li {
+    padding: 1px;
+}
+
+.card a {
+    text-decoration: none;
+    color: #2fd0ea;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+img.icon {
+    margin: 5px 10px 0 0;
+    width: 20px;
+}
+
+img.avatar {
+    width: 200px;
+}
