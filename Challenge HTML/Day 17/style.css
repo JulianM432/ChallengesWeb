@@ -32,7 +32,7 @@
 }
 
 body {
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     text-align: center;
     background-color: #0c0c0c;
     color: azure;
@@ -107,11 +107,24 @@ div {
 .card {
     /* width: 600px; */
     display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
     font-family: "Minecraft", monospace;
     font-size: 20px;
     text-align: justify;
-    background: #4b0082;
-    color: #2fd0ea;
+    background: url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/feature-content/bg-wool-dark.png);
+
+    width: 600px;
+}
+
+.card, .card a {
+    color:#D0C5C0;
+}
+
+
+.card div {
+    margin: 0;
 }
 
 .card ul {
@@ -124,11 +137,11 @@ div {
 
 .card a {
     text-decoration: none;
-    color: #2fd0ea;
 }
 
 .card a:hover {
-    text-decoration: underline;
+    color: #678f9a;
+    /* text-decoration: underline; */
 }
 
 img.icon {
@@ -137,5 +150,6 @@ img.icon {
 }
 
 img.avatar {
-    width: 200px;
+    width: 300px;
+    /* border: 1px solid #FC9FB1; */
 }
