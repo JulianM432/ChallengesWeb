@@ -23,83 +23,6 @@ div {
     border-radius: 10px;
 }
 
-a {
-    text-decoration: none;
-    color: azure;
-}
-
-a :hover {
-    text-decoration: underline;
-}
-
-.red {
-    background: orangered;
-    color: azure;
-}
-
-.blue {
-    background: darkcyan;
-    color: azure;
-}
-
-details {
-    margin: 20px auto;
-}
-
-details summary::marker {
-    content: "⮞ ";
-}
-
-details[open] summary::marker {
-    content: "⮟ ";
-}
-
-ol {
-    list-style-position: inside;
-    width: 75%;
-    text-align: justify;
-    margin: auto;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-span {
-    font-weight: bold;
-    font-size: 16px;
-    text-decoration: underline;
-}
-
-input[type="range"].custom {
-    appearance: none;
-    margin: 1rem auto;
-
-    &::-webkit-slider-runnable-track {
-        background: none;
-    }
-
-    &::-webkit-slider-container {
-        background: linear-gradient(90deg, #561139, #38a2d7);
-        height: 8px;
-    }
-
-    &::-webkit-slider-thumb {
-        appearance: none;
-        width: 20px;
-        height: 30px;
-        background: linear-gradient(90deg, #6454f0, #6ee2f5);
-        border-radius: 20px;
-    }
-}
-
-pre {
-    background-color: #0c0c0c;
-    padding: 10px;
-    border-radius: 10px;
-    /* width: 60%; */
-}
-
 .challenge {
     text-align: center;
     /* background: linear-gradient(90deg, #33001b, #ff0084); */
@@ -111,7 +34,8 @@ pre {
     justify-content: center;
     align-items: center;
     text-align: justify;
-    background: linear-gradient(90deg, #870000, #ff9100);
+    background: linear-gradient(180deg,#00ff7f,#073d3a);
+    /* background: linear-gradient(90deg, #870000, #ff9100); */
     /* align-content: center; */
     /* background: linear-gradient(90deg, #141e30, #243b55); */
     /* background: linear-gradient(90deg, #04BDE4, #0253B9); */
