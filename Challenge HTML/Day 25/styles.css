@@ -1,0 +1,76 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+:root {
+    --background-color: #2e2e2e;
+    --text-color: #fefefe;
+    --red: #ce0410;
+    --gold: #FCA001;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    /* ---------------------------------------- */
+    font-family: "Rubik", monospace;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+.container {
+    padding: 10px;
+    background-color: var(--red);
+    color: var(--gold);
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #0c0c0c;
+    & h1 {
+        text-align: center;
+        text-shadow: 1px 1px 10px #0c0c0c;
+    }
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    & img {
+        width: 600px;
+        border-radius: 5px;
+    }
+}

@@ -1,0 +1,102 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+:root {
+    --background-color: #2e2e2e;
+    --text-color: #fefefe;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    /* ---------------------------------------- */
+    font-family: "Rubik", monospace;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#show-button {
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 50px;
+    background-color: #01353C;
+    color: #00BACF;
+    border: none;
+    outline: 1px solid;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px black;
+
+    &:hover {
+        color: #01353C;
+        background-color: #00BACF;
+    }
+}
+
+#alert-dialog {
+    font-family: monospace;
+    font-size: 1.1rem;
+    margin:auto;
+    background-color: #1c326f;
+    color: #00ff7f;
+    border: 1px solid #00ff7f;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #000;
+
+    & button {
+        background-color: #1c326f;
+        color: #00ff7f;
+        border: none;
+        outline: 1px solid;
+
+        &:hover {
+            color: #1c326f;
+            background-color: #00ff7f;
+        }
+    }
+
+    &:focus-within {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    & img {
+        width: 400px;
+        border-radius: 3px;
+    }
+}

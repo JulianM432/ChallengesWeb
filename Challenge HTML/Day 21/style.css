@@ -1,0 +1,83 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+:root {
+    --background-color: #2e2e2e;
+    --text-color: #fefefe;
+    --blue-color: #2a77f1;
+    --red-color: #4c2248;
+    --yellow-color: #ffa500;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    /* ---------------------------------------- */
+    font-family: "Rubik", monospace;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+/* --------------------------------------------- */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    padding: 10px;
+    background: var(--red-color);
+    width: min-content;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #0c0c0c;
+
+    & select {
+        /* width: min-content;
+        height: min-content; */
+        color: var(--yellow-color);
+        background-color: var(--red-color);
+        margin: auto;
+        padding: 10px;
+        border-radius: 4px;
+        border: 2px solid var(--yellow-color);
+        font-size: 1.2rem;
+    }
+
+    & option {
+        color: var(--text-color);
+    }
+
+}
+
+body {
+    margin-top: 100px;
+}

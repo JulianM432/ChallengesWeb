@@ -9,14 +9,12 @@
 
 body {
     font-family: "Roboto";
-    text-align: center;
+    /* text-align: center; */
     background-color: #223;
     color: azure;
 }
 
 div {
-    width: 50%;
-    margin: 50px auto;
     padding: 15px;
     border-radius: 10px;
 }
@@ -30,10 +28,23 @@ a :hover {
     text-decoration: underline;
 }
 
+.main {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .container {
+    width: 100%;
     text-align: justify;
     background: linear-gradient(90deg, #8441a4, #ff5894);
 }
+
 .container-img {
     background-image: linear-gradient(90deg, #6454f0, #6ee2f5);
 }

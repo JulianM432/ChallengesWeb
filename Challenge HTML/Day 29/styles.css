@@ -1,0 +1,74 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+:root {
+    --background-color: #2e2e2e;
+    --text-color: #fefefe;
+    --blue-color: #2a77f1;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    /* ---------------------------------------- */
+    font-family: "Rubik", monospace;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container {
+    background-color: var(--blue-color);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    width: 90%;
+    padding: 10px;
+}
+
+button {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 3px;
+    padding: 6px 0;
+
+    &:hover {
+        background-color: var(--text-color);
+        color: var(--background-color);
+    }
+}

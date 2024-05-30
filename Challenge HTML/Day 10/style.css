@@ -15,9 +15,18 @@ body {
     /* margin: 0 auto; */
 }
 
-div {
+.main {
     width: 80%;
-    margin: 50px auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+div {
     padding: 15px;
     border-radius: 10px;
 }
@@ -54,67 +63,9 @@ details[open] summary::marker {
 }
 
 .container {
-    text-align: justify;
     background: linear-gradient(90deg, #8441a4, #ff5894);
+    & iframe {
+        width: 100%;
+        height: fit-content;
+    }
 }
-
-.container-img {
-    background-image: linear-gradient(90deg, #6454f0, #6ee2f5);
-    width: 800px;
-}
-
-.container-img img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.container-list {
-    background: linear-gradient(90deg, #561139, #38a2d7);
-    align-content: center;
-}
-
-ol {
-    list-style-position: inside;
-    width: 75%;
-    text-align: justify;
-    margin: auto;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-/* .tv {
-    width: 80%;
-    margin: 50px auto;
-    background-color: #333;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.screen {
-    position: relative;
-}
-
-.screen iframe {
-    display: none;
-}
-
-label {
-    background-color: #555;
-    border: none;
-    color: #fff;
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-input[type="radio"] {
-    display: none;
-}
-
-input[type="radio"]:checked+label+iframe {
-    background-color: #777;
-    display: block;
-} */

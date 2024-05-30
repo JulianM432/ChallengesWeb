@@ -33,80 +33,54 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    text-align: center;
     background-color: #0c0c0c;
     color: azure;
     padding: 10px;
     /* margin: 0 auto; */
 }
 
-div {
+.main {
     width: 80%;
-    margin: 50px auto;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+    & h1 {
+        text-align: center;
+    }
+}
+
+div {
     padding: 15px;
     border-radius: 10px;
 }
 
 .challenge {
-    text-align: center;
+    text-align: justify;
     /* background: linear-gradient(90deg, #33001b, #ff0084); */
     background: linear-gradient(90deg, #8e2de2, #4a00e0);
+
+    & p {
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
 }
 
-.container {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    align-content: center;
-    text-align: justify;
-    background: linear-gradient(90deg, #04BDE4, #0253B9);
-    /* background: linear-gradient(90deg, #870000, #ff9100); */
-    /* background: linear-gradient(180deg,#00ff7f,#073d3a); */
-    /* background: linear-gradient(90deg, #141e30, #243b55); */
-    /* background: linear-gradient(270deg, #ffeb70, #f02262); */
-}
-
-.challenge p {
-    font-family: monospace;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.container p, .container meter {
-    margin: 0 5px;
-}
-
-.container meter {
-    height: 25px;
-}
-
-.container-img {
-    background-image: linear-gradient(90deg, #6454f0, #6ee2f5);
-    width: 800px;
-}
-
-.container-img img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.container-list {
-    background: linear-gradient(90deg, #561139, #38a2d7);
-    align-content: center;
-}
-
-.input {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* align-content: center; */
-}
 
 /* CLASS CARD */
 
 .card {
-    /* width: 600px; */
+    width: 100%;
+    max-width: fit-content;
+    height: min-content;
     display: flex;
+    flex-wrap: wrap;
     align-content: center;
     justify-content: center;
     align-items: center;
@@ -114,12 +88,10 @@ div {
     font-size: 20px;
     text-align: justify;
     background: url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/feature-content/bg-wool-dark.png);
-
-    width: 600px;
 }
 
 .card, .card a {
-    color:#D0C5C0;
+    color: #D0C5C0;
 }
 
 

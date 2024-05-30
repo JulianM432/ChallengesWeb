@@ -1,0 +1,102 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+:root {
+    --background-color: #008080;
+    --text-color: #f4ffdf;
+    --black-color: #2e2e2e;
+    --blue-color: #2a77f1;
+    /* --white: #e8dfd5;
+    --blue: #3b4883;
+    --dark-blue: #272d4e;
+    --cinamon: #dbbba7; */
+    /* --yellow : #4b0082; */
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    /* ---------------------------------------- */
+    font-family: "Rubik", monospace;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+/* --------------------------------------------- */
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+form {
+    font-size: 1.2rem;
+    margin: auto;
+    padding: 15px;
+    max-width: fit-content;
+    width: 90%;
+    border: 2px solid;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    & input[type=text], & textarea {
+        background-color: #008080;
+        margin-bottom:10px;
+        padding: 5px 0;
+        padding-left: 10px;
+        outline: 1.5px solid var(--text-color);
+        color: var(--text-color);
+        border: none;
+        border-radius: 2px;
+    }
+    & textarea{
+        margin: 0 0 20px 0;
+        resize: none;
+    }
+    & label{
+        padding-left: 5px;
+        margin-bottom: 2px;
+    }
+    & input[type=button]{
+        border-radius: 2px;
+        color: var(--text-color);
+        background-color: var(--background-color);
+        border:1.5px solid;
+        cursor: pointer;
+    }
+    & input::placeholder, & textarea::placeholder {
+        color: var(--text-color);
+    }
+}
+body {
+    margin-top: 50px;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Day 28</title>
+</head>
+
+<body>
+    <h1>Day 28</h1>
+    <dialog id="alert-dialog">
+        DIALOG!
+        <img src="../Day 25/imgs/img6.jpg" alt="Img dialog">
+        <p>Estas dentro de un dialogo modal</p>
+        <button onclick="this.parentElement.close()">Presiona para salir</button>
+    </dialog>
+    <button id="show-button">Mostrar Dialog</button>
+</body>
+<script>
+    const showButton = document.querySelector('#show-button');
+    showButton.addEventListener("click", () => {
+        const alertDialog = document.querySelector('#alert-dialog');
+        alertDialog.showModal();
+    })
+</script>
+
+<script src="../../btn.js"></script></html>

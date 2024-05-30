@@ -1,0 +1,97 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+:root {
+    --background-color: #2e2e2e;
+    --text-color: #fefefe;
+    --dark-blue: #142742;
+    --green: #00ff7f;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    /* ---------------------------------------- */
+    font-family: "Rubik", monospace;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+form {
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #0c0c0c;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    width: 100%;
+    max-width: min-content;
+    display: flex;
+    flex-direction: column;
+    background: var(--dark-blue);
+
+    & input, button {
+        color: var(--green);
+        background-color: var(--dark-blue);
+        margin: 10px;
+        border: none;
+        outline: 1px solid;
+        border-radius: 3px;
+    }
+
+    & input[type=text] {
+        padding: 5px 0 5px 10px;
+    }
+
+    & input::placeholder {
+        color: rgb(from var(--green) r g b / 60%);
+    }
+
+    & button {
+        cursor: pointer;
+        transition: all 0.5s;
+        /* &:hover {
+            background: var(--green);
+            color: var(--dark-blue);
+        } */
+    }
+}
+.textInput {
+    color: var(--green);
+}
+.invalid {
+    color: red;
+    cursor: not-allowed; 
+}

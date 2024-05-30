@@ -8,7 +8,7 @@
 }
 
 body {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding: 0;
     font-family: "Roboto";
     text-align: center;
@@ -18,11 +18,17 @@ body {
 
 div {
     width: 90%;
-    margin: 50px auto;
+    margin: auto;
     padding: 15px;
     border-radius: 10px;
 }
-
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
 .container {
     text-align: justify;
     background: linear-gradient(90deg, #8441a4, #ff5894);

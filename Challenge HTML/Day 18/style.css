@@ -1,0 +1,123 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+:root {
+    --background-color: #fefefe;
+    --text-color: #2e2e2e;
+    --blue-color: #2a77f1;
+    /* --white: #e8dfd5;
+    --blue: #3b4883;
+    --dark-blue: #272d4e;
+    --cinamon: #dbbba7; */
+    /* --yellow : #4b0082; */
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    /* ---------------------------------------- */
+    /* margin-top: 10px; */
+    font-family: "Rubik", monospace;
+    background: var(--background-color);
+    color: var(--text-color);
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--blue-color);
+    height: min-content;
+    
+    & ul {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        list-style: none;
+
+        & li {
+            padding: 10px;
+        }
+    }
+
+    & h1 {
+        width: 50%;
+        font-style: italic;
+    }
+}
+
+article {
+    margin: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    & h1 {
+        text-align: center;
+        font-size: 1.8rem;
+        border-bottom: 2px solid var(--text-color);
+        margin-bottom: 10px;
+    }
+
+    & p {
+        text-align: justify;
+        padding: 10px;
+    }
+}
+
+footer {
+    background-color: var(--blue-color);
+    padding: 10px;
+    text-align: center;
+    /* width: 100%; */
+    font-weight: bold;
+}
+
+@media screen and (max-width:375px) {
+    .menu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        height: min-content;
+        & ul , h1{
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

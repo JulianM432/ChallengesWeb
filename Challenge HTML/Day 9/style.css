@@ -14,10 +14,18 @@ body {
     color: azure;
     /* margin: 0 auto; */
 }
+.main {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 div {
-    width: 90%;
-    margin: 50px auto;
     padding: 15px;
     border-radius: 10px;
 }
@@ -60,7 +68,6 @@ details[open] summary::marker {
 
 .container-img {
     background-image: linear-gradient(90deg, #6454f0, #6ee2f5);
-    width: 1000px;
 }
 
 .container-img img {

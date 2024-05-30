@@ -16,9 +16,24 @@ body {
     /* margin: 0 auto; */
 }
 
+.main {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+
+    & p {
+        text-align: justify;
+
+    }
+
+    height: 100vh;
+}
+
 div {
-    width: 80%;
-    margin: 50px auto;
     padding: 15px;
     border-radius: 10px;
 }

@@ -1,0 +1,104 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+:root {
+    --background-color: #2e2e2e;
+    --text-color: #fefefe;
+    --blue-color: #008080;
+    --red-color: #4c2248;
+    --yellow-color: #ffa500;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    /* ---------------------------------------- */
+    font-family: "Rubik", monospace;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+.main {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container {
+    background: var(--blue-color);
+    color: var(--text-color);
+    margin: auto;
+    padding: 10px;
+    width: 90%;
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 10px #0c0c0c;
+    & p {
+        text-align: justify;
+    }
+}
+
+input[type=date] {
+    margin-top: 10px;
+    text-align: center;
+    padding: 3px 0;
+    width: 70%;
+    background-color: var(--blue-color);
+    color: var(--text-color);
+    border: none;
+    outline: 1px solid;
+    &::-webkit-datetime-edit-text {
+        color: cyan;
+    }
+
+    &::-webkit-datetime-edit-day-field,
+    &::-webkit-datetime-edit-month-field,
+    &::-webkit-datetime-edit-year-field {
+        color: var(--text-color);
+    }
+
+    &::-webkit-calendar-picker-indicator {
+        filter: invert(1);
+    }
+}

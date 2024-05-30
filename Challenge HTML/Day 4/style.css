@@ -15,10 +15,19 @@ body {
 }
 
 div {
-    width: 50%;
-    margin: 50px auto;
     padding: 15px;
     border-radius: 10px;
+}
+
+.main {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 a {
@@ -31,6 +40,7 @@ a :hover {
 }
 
 .container {
+    width: 100%;
     text-align: justify;
     background: linear-gradient(90deg, #8441a4, #ff5894);
 }
