@@ -1,17 +1,17 @@
 import express, { json } from "express";
 import {moviesRouter} from "./routes/movies.js";
-
+import { corsMiddleware } from "./middlewares/cors.js";
 const app = express();
 app.disable("x-powered-by");
 app.use(json()); // Para parsear JSON
 
 //URLS DE ACCESO A LA API
-app.use();
+app.use(corsMiddleware());
 
 //METODOS GET DE LA API
 
 app.get("/", (req, res) => {
-  res.status(200).send("Hola mundo");
+  res.status(200).send("<h1>Hola mundo</h1>");
 });
 
 app.use('/movies', moviesRouter);

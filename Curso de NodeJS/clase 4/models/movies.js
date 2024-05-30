@@ -1,6 +1,6 @@
-import { readJSON } from "../utils";
-import { validateMovie, validatePartialMovie } from "../schemas/movies";
+import { readJSON } from "../utils.js";
 import { randomUUID } from "node:crypto";
+
 const movies = readJSON("./movies.json");
 export class MovieModel {
   static async getAll({ genre }) {
@@ -35,9 +35,9 @@ export class MovieModel {
     if (movieIndex === -1) {
       return false;
     }
-    const updateMovie = {
+    movies[movieIndex] = {
       ...movies[movieIndex],
-      ...input,
+      ...input
     };
     return movies[movieIndex];
   }
